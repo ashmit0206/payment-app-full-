@@ -12,7 +12,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      # --- ---
+      # ------
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       # -----------------------
@@ -29,5 +29,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          # Make sure 'ezzypay' matches the repository name we created on Docker Hub
-          tags: ashmit0206/ezzypay:latest
+          # Make sure 'payment' matches the repository name we created on Docker Hub
+          tags: ashmit0206/payment-app:latest
